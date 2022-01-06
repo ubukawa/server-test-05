@@ -6,7 +6,6 @@
  logDirPath: log
  port: 8836
  mbtilesDir: mbtiles
- tilemapDir: 4esri/tilemap
  maxTiles:{
   ne-test: 5
   test: 15
