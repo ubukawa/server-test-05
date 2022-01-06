@@ -35,12 +35,14 @@ logger.stream = {
 // app
 const app = express()
 var VTRouter = require('./routes/VT') //tiling
+var tilemapRouter = require('./routes/tilemap') //tilemap
 app.use(cors())
 app.use(morgan(morganFormat, {
   stream: logger.stream
 }))
 app.use(express.static(htdocsPath))
 app.use('/VT', VTRouter)
+app.use('/TM', tilemapRouter)
 
 //for http
 app.listen(port, () => {
